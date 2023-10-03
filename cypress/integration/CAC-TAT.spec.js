@@ -188,7 +188,7 @@ describe('Central de Atendimento ao Cliente TAT', ()=>{
             .selectFile('@sampleFile')
     })
 
-    it('verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', ()=>{
+    it('verifica a abertura do link política de privacidade em outra aba sem a necessidade de um clique', ()=>{
         cy.get('#privacy a')
         .should('have.attr', 'target', '_blank')
     })
